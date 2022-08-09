@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+div#pcWallpaper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+
+
+div#pcWallpaper>#intro {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: block;
+    position: relative;
+    animation: bg;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    visibility: hidden;
+    z-index: 10;
+}
+
+@keyframes bg {
+    0% {
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+div#pcWallpaper>#intro>.tit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vw;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), #fff, rgba(0, 0, 0, 1));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tit 6s linear infinite;
+    transition: all 0.5s;
+    color: #fff;
+
+}
+
+@keyframes tit {
+    0% {
+        opacity: 0;
+        background-position: -500%;
+    }
+
+    50% {
+        opacity: 1;
+        background-position: 500%;
+    }
+
+    100% {
+        opacity: 0;
+        background-position: 500%;
+    }
+
+}
+
+.util {
+    position: fixed;
+    z-index: 10;
+    color: #fff;
+    top: 56px;
+    right: 7vw;
+    font-size: .7vw;
+    text-align: right;
+    animation: util 6s;
+    z-index: 7;
+}
+
+@keyframes util {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.util li {
+    margin-top: 15px;
+}
+
+.util a {
+    font-family: 'S-CoreDream-3Light';
+    font-weight: bold;
+}
+
+
+div#pcWallpaper>.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    animation: title 6s;
+
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div#pcWallpaper>.title p {
+    font-size: 1vw;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(255, 255, 255, .6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: #fff 0 0 5px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+div#pcWallpaper>.title-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+    color: #bbb;
+}
+
+div#pcWallpaper>.title-box h1 {
+    font-family: 'S-CoreDream-9Black';
+    letter-spacing: 15px;
+    font-size: .85vw;
+}
+
+div#pcWallpaper>video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: video 6s;
+}
+
+@keyframes video {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+div#pcWallpaper>.text-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6.97vw;
+    mix-blend-mode: multiply;
+    z-index: 5;
+
+}
+
+div#pcWallpaper>.text-box h1 {
+    font-family: 'S-CoreDream-6Bold';
+    letter-spacing: 25px;
+
+}
+
+div#pcWallpaper>.scrolldown {
+    animation: sc 3s;
+}
+
+@keyframes sc {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+div#pcWallpaper>.scrolldown>span {
+    width: 1vw;
+    height: 1vw;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+    transform: rotate(-45deg) translateX(-50%);
+    position: absolute;
+    bottom: 2vw;
+    left: 50%;
+    z-index: 7;
+    animation: arrow 1.7s linear infinite;
+    opacity: 0;
+    border-radius: 1px;
+
+}
+
+div#pcWallpaper>.scrolldown>span:nth-child(1) {
+    transform: rotate(-45deg) translate(0, -50%);
+
+}
+
+
+@keyframes arrow {
+    0% {
+        bottom: 2.5vw;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        bottom: 2vw;
+    }
+
+    65% {
+        opacity: 1;
+        bottom: 2vw;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 2vw;
+    }
+}
+
+div#pcWallpaper>.page2 {
+    width: 100%;
+    height: 5000px;
+    position: relative;
+    /*   background-color: #000; */
+}
+
+
+/* div#pcWallpaper>.page2 .bg {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
