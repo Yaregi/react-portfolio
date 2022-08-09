@@ -9,6 +9,7 @@ scrollbar.init(document.querySelector('#smooth-scroll')); */
 
 
 function App() {
+
   return (
     <div className="App">
       <Main></Main>
